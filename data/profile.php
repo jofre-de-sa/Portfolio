@@ -15,7 +15,7 @@ return [
     'cv_url'    => '#', // ex.: 'assets/cv.pdf'
     'socials'   => [
         'linkedin' => 'https://www.linkedin.com/in/jofresá',
-        'github'   => 'https://github.com/seu-utilizador',
+        'github'   => 'https://github.com/jofre-de-sa',
         'whatsapp' => 'https://wa.me/244944183884',
     ],
     'stats' => [
