@@ -28,7 +28,7 @@ return [
     'phone'     => '+244 944 183 884',
     'cv_url'    => '#', // ex.: 'assets/cv.pdf'
     'socials'   => [
-        'linkedin' => 'https://www.linkedin.com/in/jofres%C3%A1/',
+        'linkedin' => 'https://www.linkedin.com/in/jofre-de-sa/',
         'github'   => 'https://github.com/jofre-de-sa',
         'whatsapp' => 'https://wa.me/244944183884',
     ],
