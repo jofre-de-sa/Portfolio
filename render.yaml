@@ -1,0 +1,16 @@
+# Blueprint do Render: cria o serviço web a partir deste repositório.
+services:
+  - type: web
+    name: portfolio
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false

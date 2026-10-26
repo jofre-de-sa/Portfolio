@@ -1,0 +1,13 @@
+# Bloqueia acesso directo a pastas internas e ficheiros sensíveis
+RedirectMatch 403 ^/(includes|data|database)/
+<FilesMatch "^(\.env.*|\.git.*|Dockerfile|render\.yaml|README\.md)$">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

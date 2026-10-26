@@ -1,0 +1,9 @@
+# Segredos — nunca publicar
+.env
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
