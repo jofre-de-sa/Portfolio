@@ -132,7 +132,9 @@ $year = date('Y');
             <div class="col-lg-5 reveal">
                 <span class="section-label">01 — Sobre</span>
                 <h2 class="section-title">Software que resolve problemas reais de negócio.</h2>
-                <p class="text-body-secondary"><?= e($profile['about']) ?></p>
+                <?php foreach (preg_split('/\n\s*\n/', trim($profile['about'])) as $para): ?>
+                    <p class="text-body-secondary"><?= e($para) ?></p>
+                <?php endforeach; ?>
                 <p class="mb-0 small text-body-secondary"><i class="bi bi-geo-alt"></i> <?= e($profile['location']) ?></p>
                 <?php if ($profile['cv_url'] !== '#'): ?>
                     <a href="<?= e($profile['cv_url']) ?>" class="btn btn-ghost mt-4" download><i class="bi bi-download"></i> Descarregar CV</a>
